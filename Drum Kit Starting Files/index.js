@@ -46,4 +46,7 @@ function keyPress(key){
 function animationEffect(currentkey){
   var button = document.querySelector("."+currentkey);
   button.classList.add("pressed");
+  setTimeout(function(){
+    button.classList.remove("pressed");
+  }, 200)
 }
